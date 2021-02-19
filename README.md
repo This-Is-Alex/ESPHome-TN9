@@ -4,7 +4,7 @@ This library integrates a freetronics TN9 sensor with ESPHome using both the IR 
 It uses the official library available at https://github.com/freetronics/IRTemp as a dependency.
 
 # Setup
-1. Put the file `tn9.h` into the same directory as your `.yaml` file for ESPHome. On HomeAssistant this is the path `config/esphome/tn9.h`
+1. Put the file `tn9.h` into the same directory as your `.yaml` file for ESPHome. On HomeAssistant this is the path `config/esphome/tn9.h`. You may also need to change the GPIO pins corresponding to your setup at the top of the file, or any of the other `#define` variables.
 2. Update your `.yaml` file to include the custom sensor's file. This means adding a `includes` section under `esphome:` in the `.yaml` file. For example the top of my configuration file looks like:
   ```
   esphome:
